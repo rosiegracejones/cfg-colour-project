@@ -48,3 +48,35 @@ h1{
   font-size: 50px;
 }
 
+  h2{
+    text-align: center;
+    font-size: 35px;
+  }
+
+    #button1{
+        width: 300px;
+        height: 40px;
+    }
+    #button2{
+        width: 300px;
+        height: 40px;
+    }
+    #container{
+        text-align: center;
+    }
+  
+
+.colour-wheel {
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 50%;
+    height:auto;
+  }
+  
+  .learn-title {
+    margin-left: 60%;
+    text-align: right;
+    margin-top:-350px;
+  }
+
