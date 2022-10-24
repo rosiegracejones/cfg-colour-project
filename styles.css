@@ -38,45 +38,47 @@ li a:hover {
   background-color: #ddd;
   font-weight: bold;
   color: black;
-
 }
 
-h1{
+h1 {
   color: black;
   text-align: center;
-  text-weight: bold;
+  font-weight: bold;
   font-size: 50px;
 }
 
-  h2{
-    text-align: center;
-    font-size: 35px;
-  }
+h2 {
+  text-align: center;
+  font-size: 35px;
+}
 
-    #button1{
-        width: 300px;
-        height: 40px;
-    }
-    #button2{
-        width: 300px;
-        height: 40px;
-    }
-    #container{
-        text-align: center;
-    }
-  
+.learn-mix-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#button1 {
+  width: 300px;
+  height: 40px;
+}
+#button2 {
+  width: 300px;
+  height: 40px;
+}
+#container {
+  text-align: center;
+}
 
 .colour-wheel {
-    margin-top: 10px;
-    margin-left: 5%;
-    margin-right: 10%;
-    width: 50%;
-    height:auto;
-  }
-  
-  .learn-title {
-    margin-left: 60%;
-    text-align: right;
-    margin-top:-350px;
-  }
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 10%;
+  width: 50%;
+  height: auto;
+}
 
+.learn-title {
+  margin-left: 60%;
+  text-align: right;
+  margin-top: -350px;
+}
