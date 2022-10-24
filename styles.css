@@ -81,7 +81,10 @@ h1{
   }
 
 .About-colour {
-  text-align: center;
-  color: black;
+    font-size: large;
+    color:black;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
   
 
