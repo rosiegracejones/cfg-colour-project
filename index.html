@@ -13,24 +13,43 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="DOMPractice.js"></script>
     <script src="app.js"></script>
-  </head>
-  <body>
-    <div class="container">
-    <h1 id="welcome">👋🏻</h1>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body> 
+
+<div>
+<nav id="navbar">
+    <div class="navbar-links" >
+<ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="home">Home</a></li>
+    </ul>
+    </div>
+</nav>
+</div>
+
+    <div class="container">
+    <h1 id="welcome">What is your name?</h1>
           <form id="name-submission">
             <div class="row">
               <div class="col-4">
-                <label for="whatIsYourName">What is your name?:</label>
+                <label for="whatIsYourName"></label>
               </div>
               <div class="col-5">
                 <div class="form-group form-inline">
-                  <input type="text" class="form-control shadow-sm" id="name-input" placeholder="Name" autofocus="on"
-                    autocomplete="off" />
+                  <input type="text" class="form-control shadow-sm" id="name-input" placeholder="Enter your name here" autofocus="on"
+                    autocomplete="off" required/>
                 </div>
               </div>
               <div class="col-2">
-                <button type="submit" class="btn btn-success shadow" id="name-submit-btn">Submit!</button>
+                <button type="submit" class="btn btn-success shadow" id="name-submit-btn">Go!</button>
               </div>
               
             </div>
