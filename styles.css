@@ -148,22 +148,26 @@ h2 {
 }
 
 .circle-container {
-  width: 500px;
-  height: 500px;
-  padding: 2.8em;
+  width: 550px;
+  height: 550px;
   /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
   border: 0px;
   border-radius: 50%;
   margin: 1.75em auto 0;
 }
+
 .circle-container a {
   display: block;
   position:absolute;
   top: 50%; left: 50%;
   width: 150px; height: 150px;
-  margin: -2em;
+  margin: -3.5em;
 }
-.circle-container img { display: block; width: 100%; }
+
+.circle-container img { 
+  display: block; width: 100%; 
+}
+
 #red {transform: translate(12em); }
 #orange { transform: rotate(300deg) translate(12em) rotate(-300deg); }
 #yellow { transform: rotate(240deg) translate(12em) rotate(-240deg); }
@@ -175,18 +179,17 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 200px;
+  align-items: center;
   width:200px;
   text-align: center;
 }
 
-.colour-circle {
-
-}
-
-
 
 /* about page content */
+
+.body-about {
+  background-color: rgb(216, 19, 91) ;
+}
 
 .about-colour {
   font-size: 30px;
