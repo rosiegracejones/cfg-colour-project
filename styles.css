@@ -87,7 +87,8 @@ h2 {
 }
 
 
-/* Quiz page styles */
+/* learn page styles */
+
 .colour-wheel {
   margin-top: 10px;
   margin-left: 5%;
@@ -102,3 +103,10 @@ h2 {
   margin-top: -350px;
 }
 
+/* about page content */
+
+
+
+.about-colour {
+  font-size: 25px;
+}
