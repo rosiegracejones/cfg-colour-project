@@ -175,47 +175,15 @@ h2 {
 #blue { transform: rotate(120deg) translate(12em) rotate(-120deg); }
 #purple { transform: rotate(60deg) translate(12em) rotate(-60deg); }
 
-.wheel-info {
-  text-align: center;
-}
-
-.body-learn-blue {
-  background-color: rgb(68, 86, 244);
-}
-
-.body-learn-green {
-  background-color: rgb(42, 172, 42);
-}
-
-.body-learn-orange {
-  background-color:rgb(234, 112, 41);
-}
-
-.body-learn-purple {
-  background-color: rgb(217, 74, 233);
-}
-
-.body-learn-red {
-  background-color: rgb(234, 40, 40);
-}
-
-.body-learn-yellow {
-  background-color: rgb(255, 184, 42);
-}
-
-#color-wheel-link {
+#wheel-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 60px;
-  font-size: 18px;
-  background-color: rgb(0, 128, 128, 0.75);
-  border-width: 0px;
-  border-radius: 50%;
-  height: 105px;
-  width: 105px;
+  align-items: center;
+  width:200px;
   text-align: center;
 }
+
 
 /* about page content */
 
@@ -233,10 +201,93 @@ h2 {
 .blue-title {
   font-size: 60px;
   text-align: center;
-  color: white;
+  color: RoyalBlue;
 }
 
-p{
+.blue-info{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+/* red page info */
+
+.red-title {
+  font-size: 60px;
+  text-align: center;
+  color: Red;
+}
+
+.red-info{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+/* yellow page info */
+
+.yellow-title {
+  font-size: 60px;
+  text-align: center;
+  color: Gold;
+}
+
+.yellow-info{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+/* green page info */
+
+.green-title {
+  font-size: 60px;
+  text-align: center;
+  color: DarkGreen;
+}
+
+.green-info{
+  font-size: 30px;
+  text-align: center;
+}
+
+#color-wheel-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 60px;
+  font-size: 18px;
+  background-color: rgb(0, 128, 128, 0.75);
+  border-width: 0px;
+  border-radius: 50%;
+  height: 105px;
+  width: 105px;
+  text-align: center;
+}
+
+/* purple page info */
+
+.purple-title {
+  font-size: 60px;
+  text-align: center;
+  color: DarkOrchid;
+}
+
+.purple-info{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+/* orange page info */
+
+.orange-title {
+  font-size: 60px;
+  text-align: center;
+  color: RoyalBlue;
+}
+
+.orange-info{
   font-size: 30px;
   text-align: center;
 }
