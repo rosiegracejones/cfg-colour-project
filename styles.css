@@ -195,3 +195,9 @@ h2 {
   font-size: 30px;
   padding: 20px;
 }
+
+.blue-title{
+  font-size: 60px;
+  text-align: center;
+  color: blue;
+}
