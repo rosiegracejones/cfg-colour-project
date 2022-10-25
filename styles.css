@@ -215,13 +215,15 @@ h2 {
   padding: 20px;
 }
 
-.blue-title{
+/* blue page info */
+
+.blue-title {
   font-size: 60px;
   text-align: center;
   color: RoyalBlue;
 }
 
-.blue-info{
+p{
   font-size: 30px;
   text-align: center;
 }
