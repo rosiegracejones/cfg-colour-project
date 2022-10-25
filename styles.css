@@ -175,11 +175,7 @@ h2 {
 #blue { transform: rotate(120deg) translate(12em) rotate(-120deg); }
 #purple { transform: rotate(60deg) translate(12em) rotate(-60deg); }
 
-#wheel-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width:200px;
+.wheel-info {
   text-align: center;
 }
 
