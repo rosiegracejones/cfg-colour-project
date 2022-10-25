@@ -18,10 +18,10 @@ body {
 }
 
 .nav-item {
-  padding: 8px 16px;
+  padding: 8px 6px;
   text-align: left;
   font-size: 20px;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .nav-item a:link {
@@ -38,6 +38,13 @@ body {
   font-weight: bold;
   color: rgb(216, 19, 91);
   text-decoration: underline teal wavy;
+}
+
+.nav-item a:active {
+  background-color: rgba(250, 242, 242, 0.961);
+  font-weight: bold;
+  color: teal;
+  text-decoration: underline rgb(216, 19, 91) wavy ;
 }
 
 .nav-item:first-child {
@@ -63,7 +70,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #ad69ca;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 h2 {
@@ -108,5 +115,6 @@ h2 {
 
 
 .about-colour {
-  font-size: 25px;
+  font-size: 30px;
+  padding: 20px;
 }
