@@ -177,11 +177,34 @@ h2 {
 
 #wheel-info {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width:200px;
   text-align: center;
+}
+
+.body-learn-blue {
+  background-color: rgb(68, 86, 244);
+}
+
+.body-learn-green {
+  background-color: rgb(42, 172, 42);
+}
+
+.body-learn-orange {
+  background-color:rgb(234, 167, 41);
+}
+
+.body-learn-purple {
+  background-color: rgb(217, 74, 233);
+}
+
+.body-learn-red {
+  background-color: rgb(234, 40, 40);
+}
+
+.body-learn-yellow {
+  background-color: rgb(255, 184, 42);
 }
 
 
