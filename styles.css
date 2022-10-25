@@ -5,37 +5,41 @@ body {
 }
 
 /* navbar styles */
-.navbar {
-  overflow: hidden;
-  position: fixed;
-  margin: 0;
-  padding: 0;
-}
 
-ul {
+.nav-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: black;
+  text-decoration: none;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: #f2f2f2;
 }
 
-li {
-  float: right;
+.nav-item {
+  padding: 8px 16px;
+  text-align: left;
 }
 
-li a {
-  display: block;
+.nav-item a:link {
   color: black;
-  text-align: left;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+.nav-item a:visited {
+  color: black;
+}
+
+.nav-item a:hover {
   background-color: #ddd;
   font-weight: bold;
   color: black;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 1rem;
 }
 
 /* centre content container */
@@ -44,10 +48,10 @@ li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
-  min-height: 500px;
+  max-width: 550px;
+  min-height: 550px;
   background-color: white;
-  margin-top: 75px;
+  margin-top: 55px;
   border-radius: 50%;
   text-align: center;
 }
@@ -71,7 +75,12 @@ h2 {
 
 .learn-mix-buttons {
   text-align: center;
+  font-size: 25px;
   margin-top: 40px;
+}
+
+.learn-mix-buttons a:link, a:visited {
+ color: white;
 }
 
 
