@@ -149,7 +149,7 @@ h2 {
   height: 24em;
   padding: 2.8em;
   /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-  border: dashed 1px;
+  border: 0px;
   border-radius: 50%;
   margin: 1.75em auto 0;
 }
@@ -157,19 +157,16 @@ h2 {
   display: block;
   position: absolute;
   top: 50%; left: 50%;
-  width: 4em; height: 4em;
+  width: 150px; height: 150px;
   margin: -2em;
 }
 .circle-container img { display: block; width: 100%; }
-.deg0 { 
-  transform: translate(12em);
-  width: 100px;
-}
-.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
-.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
-.deg180 { transform: translate(-12em); }
-.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
-.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+#red {transform: translate(12em); }
+#orange { transform: rotate(300deg) translate(12em) rotate(-300deg); }
+#yellow { transform: rotate(240deg) translate(12em) rotate(-240deg); }
+#green { transform: rotate(180deg) translate(12em) rotate(-180deg); }
+#blue { transform: rotate(120deg) translate(12em) rotate(-120deg); }
+#purple { transform: rotate(60deg) translate(12em) rotate(-60deg); }
 
 
 .colour-wheel {
