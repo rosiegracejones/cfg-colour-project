@@ -40,11 +40,9 @@ body {
   text-decoration: underline teal wavy;
 }
 
-.nav-item a:active {
+.nav-list > #active > a {
   background-color: rgba(250, 242, 242, 0.961);
-  font-weight: bold;
-  color: teal;
-  text-decoration: underline rgb(216, 19, 91) wavy ;
+  text-decoration: underline #f1c232 wavy ;
 }
 
 .nav-item:first-child {
@@ -61,7 +59,7 @@ body {
   max-width: 550px;
   min-height: 550px;
   background-color: white;
-  margin-top: 55px;
+  margin-top: 45px;
   border-radius: 50%;
   text-align: center;
 }
@@ -79,8 +77,9 @@ h2 {
   font-size: 35px;
 }
 
-#form {
+#name-submission {
   width: 300px;
+  margin-top: 0px;
 }
 
 .learn-mix-buttons {
