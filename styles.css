@@ -66,10 +66,9 @@ label {
 }
 
 #form {
-  display: flex;
   width: 300px;
-  align-self: center;
 }
+
 
 .learn-mix-buttons {
   text-align: center;
