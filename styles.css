@@ -1,17 +1,10 @@
+
+/* background */
 body {
-  background-color: ye
+  background-color: #f1c232;
 }
 
-.container {
-  max-width: 800px;
-  margin-top: 30px;
-}
-
-#welcome {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: violet;
-}
-
+/* navbar styles */
 .navbar {
   overflow: hidden;
   position: fixed;
@@ -45,17 +38,37 @@ li a:hover {
   color: black;
 }
 
-h1 {
-  color: black;
+/* centre content container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  min-height: 500px;
+  background-color: white;
+  margin-top: 75px;
+  border-radius: 50%;
   text-align: center;
-  font-weight: bold;
-  font-size: 50px;
-  margin-top:80px;
 }
 
-h2 {
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ad69ca;
   text-align: center;
+  font-size: 50px;
+}
+
+label {
+  text-align: center;
+  color: #444444;
   font-size: 35px;
+}
+
+#form {
+  display: flex;
+  width: 300px;
+  align-self: center;
 }
 
 .learn-mix-buttons {
@@ -77,6 +90,3 @@ h2 {
   margin-top: -350px;
 }
 
-#form {
-  min-width: 300px;
-}
