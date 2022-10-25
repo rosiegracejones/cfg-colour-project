@@ -264,6 +264,12 @@ h2 {
   width: 105px;
   text-align: center;
 }
+.green-info-further{
+  font-size: 30px;
+  text-align: center;
+}
+
+
 
 /* purple page info */
 
@@ -278,6 +284,12 @@ h2 {
   text-align: center;
 }
 
+.purple-info-further{
+  font-size: 30px;
+  text-align: center;
+}
+
+
 
 /* orange page info */
 
@@ -291,3 +303,9 @@ h2 {
   font-size: 30px;
   text-align: center;
 }
+
+.orange-info-further{
+  font-size: 30px;
+  text-align: center;
+}
+
