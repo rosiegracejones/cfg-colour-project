@@ -103,7 +103,7 @@ h2 {
 
 .learn-mix-buttons {
   display: flex;
-  justify content: center;
+  justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 25px;
@@ -143,10 +143,13 @@ h2 {
 
 /* learn page styles */
 
+.learn-body {
+  background-color: rgb(235, 221, 221);
+}
+
 .circle-container {
-  position: relative;
-  width: 24em;
-  height: 24em;
+  width: 500px;
+  height: 500px;
   padding: 2.8em;
   /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
   border: 0px;
@@ -155,7 +158,7 @@ h2 {
 }
 .circle-container a {
   display: block;
-  position: absolute;
+  position:absolute;
   top: 50%; left: 50%;
   width: 150px; height: 150px;
   margin: -2em;
@@ -168,28 +171,19 @@ h2 {
 #blue { transform: rotate(120deg) translate(12em) rotate(-120deg); }
 #purple { transform: rotate(60deg) translate(12em) rotate(-60deg); }
 
-
-.colour-wheel {
-  margin-top: 10px;
-  margin-left: 5%;
-  margin-right: 10%;
-  width: 50%;
-  height: auto;
-}
-
-.learn-title {
-  margin-left: 60%;
-  text-align: right;
-  margin-top: -350px;
+#wheel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 200px;
+  width:200px;
+  text-align: center;
 }
 
 .colour-circle {
 
 }
 
-#yellow {
-
-}
 
 
 /* about page content */
