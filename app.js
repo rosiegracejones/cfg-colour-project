@@ -1,4 +1,3 @@
-  
 function sayHello(event) {
     event.preventDefault();
   
