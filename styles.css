@@ -256,6 +256,7 @@ h2 {
   font-size: 60px;
   text-align: center;
   color: RoyalBlue;
+   text-decoration: underline;
 }
 
 .blue-info{
@@ -273,6 +274,7 @@ h2 {
   font-size: 60px;
   text-align: center;
   color: Red;
+  text-decoration: underline;
 }
 
 .red-info{
@@ -307,6 +309,7 @@ h2 {
   font-size: 60px;
   text-align: center;
   color: DarkGreen;
+  text-decoration: underline;
 }
 
 .green-info{
@@ -329,6 +332,7 @@ h2 {
   font-size: 60px;
   text-align: center;
   color: DarkOrchid;
+  text-decoration: underline;
 }
 
 .purple-info{
@@ -351,6 +355,7 @@ h2 {
   font-size: 60px;
   text-align: center;
   color: OrangeRed;
+  text-decoration: underline;
 }
 
 .orange-info{
