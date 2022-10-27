@@ -52,6 +52,17 @@ body {
   font-weight: bold;
   color: rgb(216, 19, 91);
   text-decoration: underline rgb(255, 184, 42) wavy;
+  animation: animate .5s linear infinite;
+
+}
+
+@keyframes animate {
+  0% {
+    left: -3px;
+  }
+  100% {
+    left: 30px;
+  }
 }
 
 .nav-item:first-child {
@@ -186,7 +197,7 @@ h2 {
 
 /* learn page styles */
 
-.learn-body {
+#learn-body {
   background-color: #e7def1;
 }
 
@@ -202,7 +213,6 @@ h2 {
   display: block;
   position: fixed;
   margin-left: 12em;
-  margin-top: -4.4em;
   width: 140px; height: 140px;
   -webkit-transition: all 0.8s ease;
   -moz-transition: all 0.8s ease;
@@ -211,7 +221,7 @@ h2 {
 
 /* text overlay on image hover */
 .circle-container img:hover {
-
+ 
 }
 
 #red {transform: translate(12em); }
@@ -240,6 +250,40 @@ h2 {
   height: 105px;
   width: 105px;
   text-align: center;
+}
+
+.colour-page {
+  width: 100%;
+}
+
+#page-red {
+  display: none;
+  background-color: red;
+}
+
+#page-yellow {
+  display: none;
+  background-color:rgb(255, 184, 42);
+}
+
+#page-green {
+  display: none;
+  background-color: green;
+}
+
+#page-blue {
+  display: none;
+  background-color: blue;
+}
+
+#page-purple {
+  display: none;
+  background-color: purple;
+}
+
+#page-orange {
+  display: none;
+  background-color: orange;
 }
 
 /* about page content */

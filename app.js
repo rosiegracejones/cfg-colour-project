@@ -1,5 +1,5 @@
 function sayHello(event) {
-    event.preventDefault();
+  event.preventDefault();
   
   var childName = document.querySelector("#name-input").value;
   
@@ -20,3 +20,14 @@ function sayHello(event) {
 }
 
 document.addEventListener("submit", sayHello)
+
+function learnGreen(event) {
+  event.preventDefault();
+
+  document.getElementById("page-green").style.display = 'flex';
+  document.getElementsByClassName("learn-body").style.background-color = 'green';
+  document.getElementsByClassName("circle-container").style.display = 'none';
+
+}
+
+document.addEventListener("onClick()", learnGreen)
