@@ -75,9 +75,12 @@ padding-top: 120px;
   align-content: center;
   height: 550px;
   width: 550px;
+  text-align: center;
+}
+
+#home-container {
   background-color: white;
   border-radius: 50%;
-  text-align: center;
 }
 
 h1 {
@@ -137,6 +140,7 @@ h2 {
   font-size: 30px;
   text-align: center;
   color: rgb(88, 87, 87);
+  transition: .5s ease;
 }
 
 #learn-mix-buttons {
@@ -185,28 +189,36 @@ h2 {
 /* learn page styles */
 
 .learn-body {
-  background-color: rgb(235, 221, 221);
+  background-color: #e7def1;
 }
+
+/* positioning of circles */
 
 .circle-container {
-  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 550px;
-  /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-  border: 0px;
-  border-radius: 50%;
-  margin: 1.75em auto 0;
-}
+  width: 550px;
+  /* text-align: center; */
 
-.circle-container a {
-  display: block;
-  position:absolute;
-  top: 50%; left: 50%;
-  width: 150px; height: 150px;
-  margin: -3.5em;
 }
-
+/* size qnd positioning of colour dots */
 .circle-container img { 
-  display: block; width: 100%; 
+  display: block;
+  position: fixed;
+  width: 150px; height: 150px;
+  margin-left: 34%;
+  margin-top: -13%;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+/* size & transition of images on hover */
+.circle-container img:hover {
+  width: 160px; height: 160px;
+  scale:(2,2);
 }
 
 #red {transform: translate(12em); }
@@ -218,11 +230,10 @@ h2 {
 
 #wheel-info {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:200px;
   text-align: center;
+  width: 200px;
 }
 
 #color-wheel-link {
@@ -249,7 +260,6 @@ h2 {
   padding: 20px;
 }
 
-
 /* blue page info */
 .body-learn-blue {
   background-color:rgb(235, 221, 221);
@@ -266,7 +276,6 @@ h2 {
   font-size: 30px;
   text-align: center;
 }
-
 
 /* red page info */
 .body-learn-red {
@@ -285,7 +294,6 @@ h2 {
   text-align: center;
 }
 
-
 /* yellow page info */
 .body-learn-yellow {
   background-color:rgb(235, 221, 221);
@@ -301,7 +309,6 @@ h2 {
   font-size: 30px;
   text-align: center;
 }
-
 
 /* green page info */
 .body-learn-green {
@@ -325,7 +332,6 @@ h2 {
   text-align: center;
 }
 
-
 /* purple page info */
 .body-learn-purple {
   background-color:rgb(235, 221, 221);
@@ -347,7 +353,6 @@ h2 {
   font-size: 30px;
   text-align: center;
 }
-
 
 /* orange page info */
 .body-learn-orange {
