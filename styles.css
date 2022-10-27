@@ -76,12 +76,10 @@ padding-top: 120px;
   height: 550px;
   width: 550px;
   text-align: center;
-}
-
-#home-container {
   background-color: white;
   border-radius: 50%;
 }
+
 
 h1 {
   color: rgb(88, 87, 87);
@@ -192,33 +190,28 @@ h2 {
   background-color: #e7def1;
 }
 
-/* positioning of circles */
-
 .circle-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 550px;
   width: 550px;
-  /* text-align: center; */
-
 }
 /* size qnd positioning of colour dots */
 .circle-container img { 
   display: block;
   position: fixed;
-  width: 150px; height: 150px;
-  margin-left: 34%;
-  margin-top: -13%;
+  margin-left: 12em;
+  margin-top: -4.4em;
+  width: 140px; height: 140px;
   -webkit-transition: all 0.8s ease;
   -moz-transition: all 0.8s ease;
   transition: all 0.8s ease;
 }
 
-/* size & transition of images on hover */
+/* text overlay on image hover */
 .circle-container img:hover {
-  width: 160px; height: 160px;
-  scale:(2,2);
+
 }
 
 #red {transform: translate(12em); }
@@ -229,11 +222,10 @@ h2 {
 #purple { transform: rotate(60deg) translate(12em) rotate(-60deg); }
 
 #wheel-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   width: 200px;
+  font-size: 30px;
+  align-self: center;
 }
 
 #color-wheel-link {
