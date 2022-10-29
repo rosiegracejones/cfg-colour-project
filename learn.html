@@ -35,20 +35,21 @@
 <div class="main">
 
   <div class="container">
-    <div id='circle-container'>
-    <img onclick="learnRed()" type="submit" id="red" src="./red-circle.png" alt="red circle">
-    <img onclick="learnOrange()" type="submit" id="orange" src="./orange-circle.jpg" alt="orange circle">
-    <img onclick="learnYellow()" type="submit" id="yellow" src="./yellow-circle.jpg" alt="yellow circle">
-    <img onclick="learnGreen()" type="submit" id="green" src="./green-circle.jpg" alt="green circle">
-    <img onclick="learnBlue()" type="submit" id="blue" src="./blue-circle.jpg" alt="blue circle">
-    <img onclick="learnPurple()" type="submit" id="purple" src="./purple-circle.jpg" alt="purple circle">
+    <div id='wheel-container'><h3 id="choose-colour-msg">Click a colour on the wheel to find out more!</h3>
+    <img class="colour-img" onclick="learnRed()" type="submit" id="red" src="./red-circle.png" alt="red circle">
+    <img class="colour-img" onclick="learnOrange()" type="submit" id="orange" src="./orange-circle.jpg" alt="orange circle">
+    <img class="colour-img" onclick="learnYellow()" type="submit" id="yellow" src="./yellow-circle.jpg" alt="yellow circle">
+    <img class="colour-img" onclick="learnGreen()" type="submit" id="green" src="./green-circle.jpg" alt="green circle">
+    <img class="colour-img" onclick="learnBlue()" type="submit" id="blue" src="./blue-circle.jpg" alt="blue circle">
+    <img class="colour-img" onclick="learnPurple()" type="submit" id="purple" src="./purple-circle.jpg" alt="purple circle">
     </div>
   </div>
 
 </div>
 
 <div class="colour-page" id="page-red">
-  <h3>Red is a Primary Colour.<br><br>    
+  <h1><span class="colour-txt" id="red-txt">Red</span></h1>
+  <h3>is a Primary Colour.<br><br>    
     This means Red can't be made<br>by mixing other colours together.<br>
     <h1>🍄</h1><br>
     <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
@@ -56,15 +57,17 @@
 </div>
 
 <div class="colour-page" id="page-orange">
-  <h3>Orange is a Secondary Colour.<br><br>
-    It's made by mixing together<br>Yellow & Red.<br><br>
+  <h1><span class="colour-txt" id="orange-txt">Orange</span></h1>
+  <h3>is a Secondary Colour.<br><br>
+    <span class="colour-txt" id="orange-txt">Orange</span> is made by mixing together<br><span class="colour-txt" id="yellow-txt">Yellow</span> & <span class="colour-txt" id="red-txt">Red</span>.<br><br>
     <img class="overlap-secondary" src="./orange-overlap.png" alt="yellow, red & orange mix"><br>
     <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
   </h3>
 </div>
 
 <div class="colour-page" id="page-yellow">
-  <h3>Yellow is a Primary Colour.<br><br>
+  <h1><span class="colour-txt" id="yellow-txt">Yellow</span></h1>
+  <h3>is a Primary Colour.<br><br>
     This means Yellow can't be made<br>by mixing other colours together.<br><br>
     <h1>🍌</h1><br>
     <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
@@ -72,28 +75,36 @@
 </div>
 
 <div class="colour-page" id="page-green">
-  <h3>Green is a Secondary Colour. <br><br>
-    It's made by mixing together<br>Blue & Yellow.<br><br>
+  <h1><span class="colour-txt" id="green-txt">Green</span></h1>
+  <h3>is a Secondary Colour. <br><br>
+    <span class="colour-txt" id="green-txt">Green</span> is made by mixing together<br><span class="colour-txt" id="blue-txt">Blue</span> & <span class="colour-txt" id="yellow-txt">Yellow</span>.<br><br>
     <img class="overlap-secondary" src="./green-overlap.png" alt="blue, yellow & green mix"><br>
     <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
   </h3>
 </div>
 
-<div class="colour-page" id="page-blue">
-  <h3>Blue is a Primary Colour.<br><br>
-    This means Blue can't be made<br>by mixing other colours together.<br><br>
-    <h1>🐋</h1><br>
-    <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
-  </h3>
-</div>
-
 <div class="colour-page" id="page-purple">
-  <h3>Purple is a Secondary Colour.<br><br>
-    It's made by mixing together<br>Red & Blue.<br><br>
+  <h1><span class="colour-txt" id="purple-txt">Purple</span></h1>
+  <h3>is a Secondary Colour. <br><br>
+    <span class="colour-txt" id="purple-txt">Purple</span> is made by mixing together<br><span class="colour-txt" id="red-txt">Red</span> & <span class="colour-txt" id="blue">Blue</span>.<br><br>
     <img class="overlap-secondary" src="./purple-overlap.png" alt="red, blue & purple mix"><br>
     <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
   </h3>
 </div>
+
+<div class="colour-page" id="page-blue">
+  <h1><span class="colour-txt" id="blue-txt">Blue</span></h1>
+  <h3>is a Primary Colour.<br><br>
+    This means <span class="colour-txt" id="blue-txt">blue</span> can't be made<br>by mixing other colours together.<br><br>
+    <h1>🐋</h1>
+  </h3>
+  <div class="main">
+  <div class="wheel-return-container">
+    <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
+</div>
+</div>
+
+
 
     </body>
 

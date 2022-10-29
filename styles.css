@@ -91,6 +91,9 @@ padding-top: 120px;
   border-radius: 50%;
 }
 
+#emoji {
+  font-size: 40px;
+}
 
 h1 {
   color: rgb(88, 87, 87);
@@ -108,16 +111,21 @@ h2 {
 h3 {
   text-align: center;
   color: #444444;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 /* form & submit button */
+#welcome {
+  position: relative;
+  top: -20px;
+}
+
 #name-submission {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
+  margin-top: -20px;
 }
 
 #name-input {
@@ -150,12 +158,13 @@ h3 {
 
 #choose-text {
   display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  align-self: center;
   font-size: 30px;
   text-align: center;
   color: rgb(88, 87, 87);
+  width: 375px;
+  top: -15px;
 }
 
 .fade-in {
@@ -169,42 +178,35 @@ h3 {
   100% { opacity: 1;}
 }
 
+/* mix and learn option buttons container */
 #learn-mix-buttons {
   display: none;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: center;
   align-items: center;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
+  width: 300px;
+  animation: 2s ease 2s normal forwards 1 fadein;
+  -webkit-animation: 2s ease 2s normal forwards 1 fadein;
+  opacity: 0;
 }
 
-.learn-mix-buttons a:link, a:visited {
+.select-btn:hover {
  color: white;
+ text-decoration: none;
 }
 
-#mix-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 35px;
-  background-color: #ffc929;
-  border-radius: 20px;
-  height: 55px;
-  width: 150px;
-  text-align: center;
-  color: rgb(88, 87, 87);
-  font-size: 23px;
-  box-shadow: 5px 5px 10px 1px #d7d6d6;
-  text-decoration: none;
-}
-
-#learn-btn {
+/* button style */
+.select-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #ffc929;
   border-radius: 20px;
   height: 55px;
-  width: 150px;
+  width: 125px;
   text-align: center;
   color: rgb(88, 87, 87);
   font-size: 23px;
@@ -215,19 +217,21 @@ h3 {
 /* /////////////////////////////////////////////////////////// */
 /* learn page styles */
 
+/* colour wheel 'learn' page */
 #learn-body {
   background-color: #e7def1;
 }
 
-#circle-container {
+#wheel-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 550px;
-  width: 550px;
+  width: 550px;  
 }
+
 /* size qnd positioning of colour dots */
-#circle-container img { 
+#wheel-container img { 
   display: block;
   position: fixed;
   margin-left: 12em;
@@ -237,6 +241,7 @@ h3 {
   transition: all 0.8s ease;
 }
 
+/* colour dots */
 #red {transform: translate(12em); }
 #orange { transform: rotate(300deg) translate(12em) rotate(-300deg); }
 #yellow { transform: rotate(240deg) translate(12em) rotate(-240deg); }
@@ -245,55 +250,34 @@ h3 {
 #purple { transform: rotate(60deg) translate(12em) rotate(-60deg); }
 
 /* instruction text (click on colour) */
-#wheel-info {
-  text-align: center;
-  width: 200px;
-  font-size: 30px;
+
+#choose-colour-msg {
   align-self: center;
+  margin-left: -25px;
+  margin-top: -5%;
+  width: 225px;
 }
 
+/* learn colour pages positioning */
 .colour-page {
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: -33%;
+  position: relative;
+  bottom: 450px;
 }
 
-.overlap-secondary {
-  width: 30%;
-  height: 30%;
-}
+/* elements in colour pages (text, pictures, background) */
 
-#page-red {
-  display: none;
-}
-
-#page-orange {
-  display: none;
-}
-
-#page-yellow {
-  display: none;
-}
-
-#page-green {
-  display: none;
-}
-
-#page-blue {
-  display: none;
-}
-
-#page-purple {
-  display: none;
+/* return to colour wheel button & container */
+.wheel-return-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .wheel-return-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #ffc929;
   border-radius: 20px;
   border-style: none;
@@ -306,6 +290,61 @@ h3 {
   box-shadow: 5px 5px 10px 1px #d7d6d6;
   text-decoration: none;
 }
+.colour-txt {
+  font-weight: bold;
+}
+.overlap-secondary {
+  width: 10%;
+  height: 10%;
+}
+
+/* red page*/
+#page-red {
+  display: none;
+}
+#red-txt {
+  color: #ed1c24;
+}
+
+/* orange page */
+#page-orange {
+  display: none;
+}
+#orange-txt {
+  color: #e87a22;
+}
+
+/* yellow page*/
+#page-yellow {
+  display: none;
+}
+#yellow-txt {
+  color: #eecc0e;
+}
+/* green page */
+#page-green {
+  display: none;
+}
+#green-txt {
+  color: #00a61b;
+}
+
+/* blue page */
+#page-blue {
+  display: none;
+}
+#blue-txt {
+  color: #3479f8;
+}
+
+/* purple page*/
+#page-purple {
+  display: none;
+}
+#purple-txt {
+  color: #ac34f8;
+}
+
 
 /* //////////////////////////////////////////////////////////// */
 /* about page content */
@@ -434,3 +473,25 @@ h3 {
   text-align: center;
 }
 
+
+
+/* testing
+
+.overlay {
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ed1c24;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-txt {
+  color: white;
+  font-size: 20px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
