@@ -4,7 +4,8 @@ function sayHello(event) {
   var childName = document.querySelector("#name-input").value;
   
   if (childName !== "") {
-    var welcomeText = `🌈Hi ${childName}!`;
+    var welcomeText = `🌈
+    Hi ${childName}!`;
   } 
   
   else {
@@ -84,4 +85,16 @@ function learnPurple() {
 
 function wheelReturn() {
   window.location.reload()
+}
+
+function frogMouseOver() {
+  document.getElementById("frog-speak").style.display = 'block';
+  document.getElementById("frog").style.display = 'none';
+  document.getElementById("frog-txt").style.display = 'block';
+}
+
+function frogMouseOut() {
+  document.getElementById("frog-speak").style.display = 'none';
+  document.getElementById("frog").style.display = 'block';
+  document.getElementById("frog-txt").style.display = 'none';
 }

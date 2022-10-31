@@ -78,7 +78,7 @@ body {
 .main {
 padding-top: 120px;
 display: flex; 
-justify-content: space-between; 
+justify-content: center;
 flex-wrap: wrap; 
 }
 
@@ -259,7 +259,7 @@ h4 {
 
 /* landing page */
 #learn-body {
-  background-color:  rgb(235, 226, 226);
+  background-color:  rgb(237, 213, 213);
 }
 
 #learn-page {
@@ -288,7 +288,7 @@ h4 {
 } */ 
 
 .side-child {
-  flex: 0 0 400px;
+  flex: 0 0 300px;
   flex-direction: row;
   align-content: center;
 }
@@ -356,7 +356,25 @@ h4 {
 /* frog */
 #frog {
   font-size: 80px;
+  margin-top: -40px;
 }
+
+#frog-speak {
+  display: none;
+  position: relative;
+  width: 451px;
+  left: 321px;
+  margin-top: -74px;
+}
+
+#frog-txt {
+  display: none;
+  width: 285px;
+  font-size: 20px;
+  position: relative;
+  margin-top: -100px;
+}
+
 
 /* red */
 #red {
@@ -442,14 +460,6 @@ h4 {
   transform: rotate(60deg) translate(14em) rotate(-60deg) scale(1.2,1.2);
  }
 
-/* 'Click on a colour' text'
-#choose-colour-msg {
-  align-self: center;
-  margin-left: -25px;
-  margin-top: 35px;
-  width: 200px;
-  font-size: 100px;
-} */
 
 /* learn colour pages positioning & visibility */
 .colour-page {
@@ -486,7 +496,7 @@ h4 {
   font-weight: bold;
 }
 
-.primary-emoji {
+#primary-emoji {
   font-size: 85px;
 }
 
@@ -495,7 +505,7 @@ h4 {
   height: 28%;
 }
 
-.underline {
+.bold {
   font-weight: bold;
 }
 
@@ -550,7 +560,7 @@ h4 {
 /* //////////////////////////////////////////////////////////// */
 /* about page content */
 .body-about {
-  background-color: rgb(216, 19, 91) ;
+  background-color: white;
 }
 
 .about-colour {

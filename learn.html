@@ -35,33 +35,30 @@
 <!-- parent container) -->
 <div class="main">
 
-<!-- left column-->
-<div class="side-child" id="child-left">
-  <div id="wheel-info">
-    <h2>Click a colour to find out more!</h2>
-  </div>
-</div>
+<!-- left column -->
+
 
   <!-- middle (main content) -->
   <div class="middle-child" id="learn-page">
     <div id='wheel-container'>
-      <!-- <h1 id="choose-colour-msg">🐸</h1> -->
       <div class="colour-img" onclick="learnRed()" type="submit" id="red"><h4>Red</h4></div>
       <div class="colour-img" onclick="learnOrange()" type="submit" id="orange"><h4>Orange</h4></div>
       <div class="colour-img" onclick="learnYellow()" type="submit" id="yellow"><h4>Yellow</h4></div>
       <div class="colour-img" onclick="learnGreen()" type="submit" id="green"><h4>Green</h4></div>
       <div class="colour-img" onclick="learnBlue()" type="submit" id="blue"><h4>Blue</h4></div>
       <div class="colour-img" onclick="learnPurple()" type="submit" id="purple"><h4>Purple</h4></div>
-      <div id="frog">🐸</div>
+      <div onmouseover="frogMouseOver()" id="frog">🐸<br/><h3><span class="bold">Tap a colour!</span></h3></div>
+      <img onmouseout="frogMouseOut()" id="frog-speak" src="./images/frog.png" alt="frog talking">
+      <div id="frog-txt"><br><span class="bold">*Ribbit*</span><br>Look at all these<br>bright colours!<br><br>My favourite colour is <span class="colour-txt" id="green-txt">green</span>, what's yours?</div>
     </div>
 
 
   <!-- red page -->
   <div class="colour-page" id="page-red">
     <h1><span class="colour-txt" id="red-txt">Red</span></h1>
-    <h3>is a <span class="underline">primary</span> colour.<br><br>    
+    <h3>is a <span class="bold">primary</span> colour.<br><br>    
       This means <span class="colour-txt" id="red-txt">red</span> can't be made by mixing other colours together.<br>
-      <span class="primary-emoji">🍄</span><br>
+      <span id="primary-emoji">🍄</span><br>
       <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
       <a href="./quiz.html" class="fade-in"><button class="colour-page-btn" id="quiz-btn">go to quiz →</button></a>
     </h3>
@@ -70,7 +67,7 @@
   <!-- orange page -->
   <div class="colour-page" id="page-orange">
     <h1><span class="colour-txt" id="orange-txt">Orange</span></h1>
-    <h3>is a <span class="underline">secondary</span> colour.<br><br>
+    <h3>is a <span class="bold">secondary</span> colour.<br><br>
       <span class="colour-txt" id="orange-txt">Orange</span> is made by mixing together <span class="colour-txt" id="yellow-txt">yellow</span> & <span class="colour-txt" id="red-txt">red</span>.<br><br>
       <img class="overlap-secondary" src="./images/orange-overlap.png" alt="yellow, red & orange mix"><br>
       <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
@@ -81,7 +78,7 @@
   <!-- yellow page -->
   <div class="colour-page" id="page-yellow">
     <h1><span class="colour-txt" id="yellow-txt">Yellow</span></h1>
-    <h3>is a <span class="underline">primary</span> colour.<br><br>
+    <h3>is a <span class="bold">primary</span> colour.<br><br>
       This means <span class="colour-txt" id="yellow-txt">yellow</span> can't be made by mixing other colours together.
       <br><span class="primary-emoji">🍌</span><br>
       <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
@@ -92,7 +89,7 @@
   <!-- green page -->
   <div class="colour-page" id="page-green">
     <h1><span class="colour-txt" id="green-txt">Green</span></h1>
-    <h3>is a <span class="underline">secondary</span> colour. <br><br>
+    <h3>is a <span class="bold">secondary</span> colour. <br><br>
       <span class="colour-txt" id="green-txt">Green</span> is made by mixing together <span class="colour-txt" id="blue-txt">blue</span> & <span class="colour-txt" id="yellow-txt">yellow</span>.<br><br>
       <img class="overlap-secondary" src="./images/green-overlap.png" alt="blue, yellow & green mix"><br>
       <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
@@ -103,7 +100,7 @@
   <!-- blue page -->
   <div class="colour-page" id="page-blue">
     <h1><span class="colour-txt" id="blue-txt">Blue</span></h1>
-    <h3>is a <span class="underline">primary</span> colour.<br><br>
+    <h3>is a <span class="bold">primary</span> colour.<br><br>
       This means <span class="colour-txt" id="blue-txt">blue</span> can't be made by mixing other colours together.<br>
       <span class="primary-emoji">🐋</span><br>
       <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>   
@@ -114,7 +111,7 @@
 <!-- purple page -->
   <div class="colour-page" id="page-purple">
     <h1><span class="colour-txt" id="purple-txt">Purple</span></h1>
-    <h3>is a <span class="underline">secondary</span> colour. <br><br>
+    <h3>is a <span class="bold">secondary</span> colour. <br><br>
       <span class="colour-txt" id="purple-txt">Purple</span> is made by mixing together <span class="colour-txt" id="red-txt">red</span> & <span class="colour-txt" id="blue-txt">blue</span>.<br><br>
       <img class="overlap-secondary" src="./images/purple-overlap.png" alt="red, blue & purple mix"><br>
       <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
@@ -126,12 +123,7 @@
 <!-- end of middle container -->
 
 <!-- right side -->
-  <div class="side-child" id="child-right">
-    <div id="quiz-ready">
-        <h2>Ready for<br>the quiz?</h2>
-        <a href="./quiz.html"><button class="colour-page-btn" id="quiz-btn">go to quiz →</button></a>
-    </div>
-  </div>
+
 
 
 </div>
