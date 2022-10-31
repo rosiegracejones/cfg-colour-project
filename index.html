@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="app.js"></script>
-    <a href="postname-index.html"></a>
 
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +22,7 @@
     <div>
       <nav id="navbar">
           <ul class="nav-list" id="nav">
-            <li class="nav-item"><a href="./index.html"><img src="./paint-logo.png" width="60px" alt="home logo"></li>
+            <li class="nav-item"><a href="./index.html"><img src="./images/paint-logo.png" width="60px" alt="home logo"></li>
             <li class="nav-item" id="active"><a href="./index.html">Home</a></li>
             <li class="nav-item"><a href="./learn.html">Learn</a></li>
             <li class="nav-item"><a href="./quiz.html">Quiz</a></li>
@@ -32,16 +31,19 @@
       </nav>
     </div>
 
+    <!-- parent container -->
     <div class="main">
 
+    <div class="side-child"></div>
+
     <!-- homepage content container -->
-    <div class="container">
-      <h1 id="welcome"><span id="emoji">🍄🦊🍌🌵🐋☂️</span><br>Hello</h1>
+    <div class="middle-child">
+      <h1 id="welcome"><span id="emoji">🍄🦊🍌🌵🐋☂️</span><br>Hello!</h1>
     
       <!-- form -->
       <form id="name-submission">
               <input type="text" id="name-input" placeholder="What's your name?" autofocus="on" autocomplete="off" /><br>
-              <button onclick="sayHello()" type="submit" id="name-submit-btn">Go →</button>
+              <button onclick="sayHello()" type="submit" id="name-submit-btn">go →</button>
       </form>
       <div class="fade-in" id="choose-text"> 
         What would you like to do now?
@@ -54,7 +56,8 @@
       </div>
     </div>
 
-  
+    <div class="side-child"></div>
+    
   </div>
   
 </body>

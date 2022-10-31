@@ -7,6 +7,12 @@ body {
   font-family: 'Comfortaa', cursive;
 }
 
+/* Desktops */
+@media (min-width:768px) { .container-block {  } }
+
+/* Mobiles */
+@media (max-width:767px) { .container-block {  } }
+
 
 /* navbar styles */
 
@@ -21,13 +27,12 @@ body {
   background-color: white;
   position: fixed;
   width: 100%;
-
 }
 
 .nav-item {
-  padding: 8px 6px;
+  padding: 8px 4px;
   text-align: left;
-  font-size: 20px;
+  font-size: 21px;
   margin-right: 2rem;
 }
 
@@ -53,7 +58,6 @@ body {
   color: rgb(216, 19, 91);
   text-decoration: underline rgb(255, 184, 42) wavy;
   animation: animate .5s linear infinite;
-
 }
 
 @keyframes animate {
@@ -70,31 +74,53 @@ body {
   margin-left: 1rem;
 }
 
+/* flexbox parent container */
 .main {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-content: center;
 padding-top: 120px;
+display: flex; 
+justify-content: space-between; 
+flex-wrap: wrap; 
 }
 
-/* centre content container */
-.container {
+
+/* middle container (index and learn pages)
+
+/* Desktops: flexbox child columns */
+/* @media (min-width: 768px) {
+  .side-child { width: 100% }
+} */
+
+/* Mobiles: flexbox child columns */
+/* @media (max-width: 767px) {
+    .side-child { width: 100% }
+    .side-child { margin-bottom: 32px }
+} */
+
+/* Desktops: inner padding for child columns */
+/* @media (min-width: 768px) {
+    .side-child.item-col-padding { padding: 1.8% 2% 2.2% 2% }
+} */
+
+/* Mobiles: inner padding for child columns  */
+/* @media (max-width: 767px) {
+    .side-child.item-col-padding { padding: 6.5% 7% 7% 7% } */
+
+
+.middle-child {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   height: 550px;
-  width: 550px;
+  max-width: 550px;
   text-align: center;
   background-color: white;
   border-radius: 50%;
+  padding: 5% 5%;
 }
 
-#emoji {
-  font-size: 40px;
-}
-
+/* heading styles */
 h1 {
   color: rgb(88, 87, 87);
   text-align: center;
@@ -114,10 +140,24 @@ h3 {
   font-size: 26px;
 }
 
-/* form & submit button */
+h4 {
+  font-size: 22px;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* home page styles */
+
+/* hello, form & submit button*/
+#emoji {
+  font-size: 40px;
+  position: relative;
+  top: -10px;
+}
+
 #welcome {
   position: relative;
-  top: -20px;
+  top: -35px;
 }
 
 #name-submission {
@@ -125,7 +165,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 #name-input {
@@ -154,8 +194,7 @@ h3 {
   box-shadow: 5px 5px 10px 1px #d7d6d6;
 }
 
-/* learn link buttons & option message */
-
+/* learn or quiz link buttons & option message */
 #choose-text {
   display: none;
   position: relative;
@@ -215,87 +254,249 @@ h3 {
 }
 
 /* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
 /* learn page styles */
 
-/* colour wheel 'learn' page */
+/* landing page */
 #learn-body {
-  background-color: #e7def1;
+  background-color:  rgb(235, 226, 226);
 }
 
-#wheel-container {
+#learn-page {
+  background-color:   rgb(235, 226, 226);
+}
+
+/* ======== left container ========= */
+
+/* Desktops: flexbox child columns */
+/* @media (min-width: 768px) {
+  .side-child { width: 29% } */
+
+/* Mobiles: flexbox child columns */
+/* @media (max-width: 767px) {
+    .middle-child { width: 100% }
+}
+
+/* Desktops: inner padding for child columns */
+/* @media (min-width: 768px) {
+    .side-child.item-col-padding { padding: 1.8% 2% 2.2% 2% }
+} */
+
+/* Mobiles: inner padding for child columns  */
+/* @media (max-width: 767px) {
+    .side-child.item-col-padding { padding: 6.5% 7% 7% 7% }
+} */ 
+
+.side-child {
+  flex: 0 0 400px;
+  flex-direction: row;
+  align-content: center;
+}
+
+/* learn page right hand button */
+#child-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: center;
+}
+#wheel-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 550px;
-  width: 550px;  
+  align-items: center;
+  align-self: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
 }
 
-/* size qnd positioning of colour dots */
-#wheel-container img { 
-  display: block;
+/* learn page left hand button */
+#child-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: center;
+}
+#quiz-ready {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+}
+
+/* circle container */
+#wheel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+/* styles of colour circles (except colour & transform) */
+.colour-img { 
+  display: inline-flex;
   position: fixed;
-  margin-left: 12em;
-  width: 140px; height: 140px;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  width: 155px; height: 155px;
+  box-shadow: 5px 5px 10px 1px #d7d6d6;
+  border-radius: 50%;
 }
 
-/* colour dots */
-#red {transform: translate(12em); }
-#orange { transform: rotate(300deg) translate(12em) rotate(-300deg); }
-#yellow { transform: rotate(240deg) translate(12em) rotate(-240deg); }
-#green { transform: rotate(180deg) translate(12em) rotate(-180deg); }
-#blue { transform: rotate(120deg) translate(12em) rotate(-120deg); }
-#purple { transform: rotate(60deg) translate(12em) rotate(-60deg); }
+/* colour dots position, colour, & text on hover*/
+/* frog */
+#frog {
+  font-size: 80px;
+}
 
-/* instruction text (click on colour) */
+/* red */
+#red {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(14em);
+  background-color: #ed1c24;
+  color: #ed1c24;
+ }
+ #red:hover {
+  color: white;
+  transform: translate(14em) scale(1.2,1.2);
+ }
 
+/* orange */
+#orange {
+  display:flex;
+  justify-content: center;
+  align-items: center; 
+  transform: rotate(300deg) translate(14em) rotate(-300deg);
+  background-color: #e87a22;
+  color: #e87a22;
+}
+#orange:hover {
+  color: white;
+  transform: rotate(300deg) translate(14em) rotate(-300deg) scale(1.2,1.2);
+ }
+
+ /* yellow */
+#yellow { 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(240deg) translate(14em) rotate(-240deg);
+  background-color: #eecc0e;
+  color: #eecc0e;
+}
+#yellow:hover {
+  color: white;
+  transform: rotate(240deg) translate(14em) rotate(-240deg) scale(1.2,1.2);
+ }
+
+ /* green */
+#green { 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg) translate(14em) rotate(-180deg);
+  background-color: #00a61b;
+  color: #00a61b;
+}
+#green:hover {
+  color: white;
+  transform: rotate(180deg) translate(14em) rotate(-180deg) scale(1.2,1.2);
+ }
+
+ /* blue */
+#blue { 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(120deg) translate(14em) rotate(-120deg);
+  background-color: #3479f8;
+  color: #3479f8;
+}
+#blue:hover {
+  color: white;
+  transform: rotate(120deg) translate(14em) rotate(-120deg) scale(1.2,1.2);
+ }
+
+ /* purple */
+#purple { 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(60deg) translate(14em) rotate(-60deg);
+  background-color: #ac34f8;
+  color: #ac34f8;
+}
+#purple:hover {
+  color: white;
+  transform: rotate(60deg) translate(14em) rotate(-60deg) scale(1.2,1.2);
+ }
+
+/* 'Click on a colour' text'
 #choose-colour-msg {
   align-self: center;
   margin-left: -25px;
-  margin-top: -5%;
-  width: 225px;
-}
+  margin-top: 35px;
+  width: 200px;
+  font-size: 100px;
+} */
 
-/* learn colour pages positioning */
+/* learn colour pages positioning & visibility */
 .colour-page {
   display: none;
-  position: relative;
-  bottom: 450px;
 }
 
 /* elements in colour pages (text, pictures, background) */
 
 /* return to colour wheel button & container */
-.wheel-return-container {
-  display: flex;
-  justify-content: flex-start;
-  height: 250px;
-  width: 250px;
-  background-color: white;
-  border-radius: 50%;
-}
 
-.wheel-return-btn {
+.colour-page-btn {
   background-color: #ffc929;
   border-radius: 20px;
   border-style: none;
-  height: 65px;
-  width: 225px;
-  font-size: 7px;
+  height: 35px;
+  width: 130px;
   text-align: center;
   color: rgb(88, 87, 87);
-  font-size: 23px;
+  font-size: 20px;
   box-shadow: 5px 5px 10px 1px #d7d6d6;
   text-decoration: none;
+  margin-top: 30px;
 }
+
+.colour-page-btn:hover {
+ color: white;
+}
+
+#quiz-btn {
+  width: 150px;
+}
+
 .colour-txt {
   font-weight: bold;
 }
+
+.primary-emoji {
+  font-size: 85px;
+}
+
 .overlap-secondary {
-  width: 10%;
-  height: 10%;
+  width: 28%;
+  height: 28%;
+}
+
+.underline {
+  font-weight: bold;
 }
 
 /* red page*/
@@ -356,124 +557,6 @@ h3 {
   font-size: 30px;
   padding: 20px;
 }
-
-/* blue page info */
-.body-learn-blue {
-  background-color:rgb(235, 221, 221);
-}
-
-.blue-title {
-  font-size: 60px;
-  text-align: center;
-  color: RoyalBlue;
-   text-decoration: underline;
-}
-
-.blue-info{
-  font-size: 30px;
-  text-align: center;
-}
-
-/* red page info */
-.body-learn-red {
-  background-color:rgb(235, 221, 221);
-}
-
-.red-title {
-  font-size: 60px;
-  text-align: center;
-  color: Red;
-  text-decoration: underline;
-}
-
-.red-info{
-  font-size: 30px;
-  text-align: center;
-}
-
-/* yellow page info */
-.body-learn-yellow {
-  background-color:rgb(235, 221, 221);
-}
-
-.yellow-title {
-  font-size: 60px;
-  text-align: center;
-  color: #ffc929;
-}
-
-.yellow-info{
-  font-size: 30px;
-  text-align: center;
-}
-
-/* green page info */
-.body-learn-green {
-  background-color:rgb(235, 221, 221);
-}
-
-.green-title {
-  font-size: 60px;
-  text-align: center;
-  color: DarkGreen;
-  text-decoration: underline;
-}
-
-.green-info{
-  font-size: 30px;
-  text-align: center;
-}
-
-.green-info-further{
-  font-size: 30px;
-  text-align: center;
-}
-
-/* purple page info */
-.body-learn-purple {
-  background-color:rgb(235, 221, 221);
-}
-
-.purple-title {
-  font-size: 60px;
-  text-align: center;
-  color: DarkOrchid;
-  text-decoration: underline;
-}
-
-.purple-info{
-  font-size: 30px;
-  text-align: center;
-}
-
-.purple-info-further{
-  font-size: 30px;
-  text-align: center;
-}
-
-/* orange page info */
-.body-learn-orange {
-  background-color:rgb(235, 221, 221);
-}
-
-.orange-title {
-  font-size: 60px;
-  text-align: center;
-  color: OrangeRed;
-  text-decoration: underline;
-}
-
-.orange-info{
-  font-size: 30px;
-  text-align: center;
-}
-
-.orange-info-further{
-  font-size: 30px;
-  text-align: center;
-}
-
-
 
 /* testing
 

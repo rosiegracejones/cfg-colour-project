@@ -26,6 +26,10 @@ function learnRed() {
   document.getElementById("wheel-container").style.display = 'none';
   document.getElementById("learn-body").style.backgroundColor = '#ed1c24';
   document.getElementById("page-red").style.display = 'inline';
+  document.getElementById("learn-page").style.backgroundColor = 'white';
+  document.getElementById("quiz-ready").style.display = 'none';
+  document.getElementById("wheel-info").style.display = 'none';
+  
 }
 
 function learnOrange() {
@@ -33,6 +37,9 @@ function learnOrange() {
   document.getElementById("wheel-container").style.display = 'none'; 
   document.getElementById("learn-body").style.backgroundColor = '#e87a22';
   document.getElementById("page-orange").style.display = 'inline';
+  document.getElementById("learn-page").style.backgroundColor = 'white';
+  document.getElementById("quiz-ready").style.display = 'none';
+  document.getElementById("wheel-info").style.display = 'none';
 }
 
 function learnYellow() {
@@ -40,6 +47,9 @@ function learnYellow() {
   document.getElementById("wheel-container").style.display = 'none'; 
   document.getElementById("learn-body").style.backgroundColor = '#eecc0e';
   document.getElementById("page-yellow").style.display = 'inline';
+  document.getElementById("learn-page").style.backgroundColor = 'white';
+  document.getElementById("quiz-ready").style.display = 'none';
+  document.getElementById("wheel-info").style.display = 'none';
 }
 
 function learnGreen() {
@@ -47,6 +57,9 @@ function learnGreen() {
   document.getElementById("wheel-container").style.display = 'none'; 
   document.getElementById("learn-body").style.backgroundColor = '#00a61b';
   document.getElementById("page-green").style.display = 'inline';
+  document.getElementById("learn-page").style.backgroundColor = 'white';
+  document.getElementById("quiz-ready").style.display = 'none';
+  document.getElementById("wheel-info").style.display = 'none';
 }
 
 function learnBlue() {
@@ -54,6 +67,9 @@ function learnBlue() {
   document.getElementById("wheel-container").style.display = 'none'; 
   document.getElementById("learn-body").style.backgroundColor = '#3479f8';
   document.getElementById("page-blue").style.display = 'inline';
+  document.getElementById("learn-page").style.backgroundColor = 'white';
+  document.getElementById("quiz-ready").style.display = 'none';
+  document.getElementById("wheel-info").style.display = 'none';
 }
 
 function learnPurple() {
@@ -61,6 +77,9 @@ function learnPurple() {
   document.getElementById("wheel-container").style.display = 'none'; 
   document.getElementById("learn-body").style.backgroundColor = '#ac34f8';
   document.getElementById("page-purple").style.display = 'inline';
+  document.getElementById("learn-page").style.backgroundColor = 'white';
+  document.getElementById("quiz-ready").style.display = 'none';
+  document.getElementById("wheel-info").style.display = 'none';
 }
 
 function wheelReturn() {

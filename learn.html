@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="app.js"></script>
-    <a href="postname-index.html"></a>
 
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +22,7 @@
  <div>
   <nav id="navbar">
       <ul class="nav-list">
-        <li class="nav-item"><a href="./index.html"><img src="./paint-logo.png" width="60px" alt="home logo"></li>
+        <li class="nav-item"><a href="./index.html"><img src="./images/paint-logo.png" width="60px" alt="home logo"></li>
         <li class="nav-item"><a href="./index.html">Home</a></li>
         <li class="nav-item" id="active"><a href="./learn.html">Learn</a></li>
         <li class="nav-item"><a href="./quiz.html">Quiz</a></li>
@@ -32,80 +31,109 @@
   </nav>
 </div>
 
+
+<!-- parent container) -->
 <div class="main">
 
-  <div class="container">
-    <div id='wheel-container'><h3 id="choose-colour-msg">Click a colour on the wheel to find out more!</h3>
-    <img class="colour-img" onclick="learnRed()" type="submit" id="red" src="./red-circle.png" alt="red circle">
-    <img class="colour-img" onclick="learnOrange()" type="submit" id="orange" src="./orange-circle.jpg" alt="orange circle">
-    <img class="colour-img" onclick="learnYellow()" type="submit" id="yellow" src="./yellow-circle.jpg" alt="yellow circle">
-    <img class="colour-img" onclick="learnGreen()" type="submit" id="green" src="./green-circle.jpg" alt="green circle">
-    <img class="colour-img" onclick="learnBlue()" type="submit" id="blue" src="./blue-circle.jpg" alt="blue circle">
-    <img class="colour-img" onclick="learnPurple()" type="submit" id="purple" src="./purple-circle.jpg" alt="purple circle">
+<!-- left column-->
+<div class="side-child" id="child-left">
+  <div id="wheel-info">
+    <h2>Click a colour to find out more!</h2>
+  </div>
+</div>
+
+  <!-- middle (main content) -->
+  <div class="middle-child" id="learn-page">
+    <div id='wheel-container'>
+      <!-- <h1 id="choose-colour-msg">🐸</h1> -->
+      <div class="colour-img" onclick="learnRed()" type="submit" id="red"><h4>Red</h4></div>
+      <div class="colour-img" onclick="learnOrange()" type="submit" id="orange"><h4>Orange</h4></div>
+      <div class="colour-img" onclick="learnYellow()" type="submit" id="yellow"><h4>Yellow</h4></div>
+      <div class="colour-img" onclick="learnGreen()" type="submit" id="green"><h4>Green</h4></div>
+      <div class="colour-img" onclick="learnBlue()" type="submit" id="blue"><h4>Blue</h4></div>
+      <div class="colour-img" onclick="learnPurple()" type="submit" id="purple"><h4>Purple</h4></div>
+      <div id="frog">🐸</div>
+    </div>
+
+
+  <!-- red page -->
+  <div class="colour-page" id="page-red">
+    <h1><span class="colour-txt" id="red-txt">Red</span></h1>
+    <h3>is a <span class="underline">primary</span> colour.<br><br>    
+      This means <span class="colour-txt" id="red-txt">red</span> can't be made by mixing other colours together.<br>
+      <span class="primary-emoji">🍄</span><br>
+      <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
+      <a href="./quiz.html" class="fade-in"><button class="colour-page-btn" id="quiz-btn">go to quiz →</button></a>
+    </h3>
+  </div>
+
+  <!-- orange page -->
+  <div class="colour-page" id="page-orange">
+    <h1><span class="colour-txt" id="orange-txt">Orange</span></h1>
+    <h3>is a <span class="underline">secondary</span> colour.<br><br>
+      <span class="colour-txt" id="orange-txt">Orange</span> is made by mixing together <span class="colour-txt" id="yellow-txt">yellow</span> & <span class="colour-txt" id="red-txt">red</span>.<br><br>
+      <img class="overlap-secondary" src="./images/orange-overlap.png" alt="yellow, red & orange mix"><br>
+      <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
+      <a href="./quiz.html" class="fade-in"><button class="colour-page-btn" id="quiz-btn">go to quiz →</button></a>
+    </h3>
+  </div>
+
+  <!-- yellow page -->
+  <div class="colour-page" id="page-yellow">
+    <h1><span class="colour-txt" id="yellow-txt">Yellow</span></h1>
+    <h3>is a <span class="underline">primary</span> colour.<br><br>
+      This means <span class="colour-txt" id="yellow-txt">yellow</span> can't be made by mixing other colours together.
+      <br><span class="primary-emoji">🍌</span><br>
+      <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
+      <a href="./quiz.html" class="fade-in"><button class="colour-page-btn" id="quiz-btn">go to quiz →</button></a>
+    </h3>
+  </div>
+
+  <!-- green page -->
+  <div class="colour-page" id="page-green">
+    <h1><span class="colour-txt" id="green-txt">Green</span></h1>
+    <h3>is a <span class="underline">secondary</span> colour. <br><br>
+      <span class="colour-txt" id="green-txt">Green</span> is made by mixing together <span class="colour-txt" id="blue-txt">blue</span> & <span class="colour-txt" id="yellow-txt">yellow</span>.<br><br>
+      <img class="overlap-secondary" src="./images/green-overlap.png" alt="blue, yellow & green mix"><br>
+      <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
+      <a href="./quiz.html" class="fade-in"><button class="colour-page-btn" id="quiz-btn">go to quiz →</button></a>
+    </h3>
+  </div>
+
+  <!-- blue page -->
+  <div class="colour-page" id="page-blue">
+    <h1><span class="colour-txt" id="blue-txt">Blue</span></h1>
+    <h3>is a <span class="underline">primary</span> colour.<br><br>
+      This means <span class="colour-txt" id="blue-txt">blue</span> can't be made by mixing other colours together.<br>
+      <span class="primary-emoji">🐋</span><br>
+      <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>   
+      <a href="./quiz.html" class="fade-in"><button class="colour-page-btn" id="quiz-btn">go to quiz →</button></a>
+    </h3>
+  </div>
+
+<!-- purple page -->
+  <div class="colour-page" id="page-purple">
+    <h1><span class="colour-txt" id="purple-txt">Purple</span></h1>
+    <h3>is a <span class="underline">secondary</span> colour. <br><br>
+      <span class="colour-txt" id="purple-txt">Purple</span> is made by mixing together <span class="colour-txt" id="red-txt">red</span> & <span class="colour-txt" id="blue-txt">blue</span>.<br><br>
+      <img class="overlap-secondary" src="./images/purple-overlap.png" alt="red, blue & purple mix"><br>
+      <span class="fade-in"><button onclick="wheelReturn()" class="colour-page-btn">← go back</button></span>    
+      <a href="./quiz.html" class="fade-in"><button class="colour-page-btn" id="quiz-btn">go to quiz →</button></a>
+    </h3>
+  </div>
+
+</div> 
+<!-- end of middle container -->
+
+<!-- right side -->
+  <div class="side-child" id="child-right">
+    <div id="quiz-ready">
+        <h2>Ready for<br>the quiz?</h2>
+        <a href="./quiz.html"><button class="colour-page-btn" id="quiz-btn">go to quiz →</button></a>
     </div>
   </div>
 
+
 </div>
-
-<div class="colour-page" id="page-red">
-  <h1><span class="colour-txt" id="red-txt">Red</span></h1>
-  <h3>is a Primary Colour.<br><br>    
-    This means Red can't be made<br>by mixing other colours together.<br>
-    <h1>🍄</h1><br>
-    <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
-  </h3>
-</div>
-
-<div class="colour-page" id="page-orange">
-  <h1><span class="colour-txt" id="orange-txt">Orange</span></h1>
-  <h3>is a Secondary Colour.<br><br>
-    <span class="colour-txt" id="orange-txt">Orange</span> is made by mixing together<br><span class="colour-txt" id="yellow-txt">Yellow</span> & <span class="colour-txt" id="red-txt">Red</span>.<br><br>
-    <img class="overlap-secondary" src="./orange-overlap.png" alt="yellow, red & orange mix"><br>
-    <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
-  </h3>
-</div>
-
-<div class="colour-page" id="page-yellow">
-  <h1><span class="colour-txt" id="yellow-txt">Yellow</span></h1>
-  <h3>is a Primary Colour.<br><br>
-    This means Yellow can't be made<br>by mixing other colours together.<br><br>
-    <h1>🍌</h1><br>
-    <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
-  </h3>
-</div>
-
-<div class="colour-page" id="page-green">
-  <h1><span class="colour-txt" id="green-txt">Green</span></h1>
-  <h3>is a Secondary Colour. <br><br>
-    <span class="colour-txt" id="green-txt">Green</span> is made by mixing together<br><span class="colour-txt" id="blue-txt">Blue</span> & <span class="colour-txt" id="yellow-txt">Yellow</span>.<br><br>
-    <img class="overlap-secondary" src="./green-overlap.png" alt="blue, yellow & green mix"><br>
-    <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
-  </h3>
-</div>
-
-<div class="colour-page" id="page-purple">
-  <h1><span class="colour-txt" id="purple-txt">Purple</span></h1>
-  <h3>is a Secondary Colour. <br><br>
-    <span class="colour-txt" id="purple-txt">Purple</span> is made by mixing together<br><span class="colour-txt" id="red-txt">Red</span> & <span class="colour-txt" id="blue">Blue</span>.<br><br>
-    <img class="overlap-secondary" src="./purple-overlap.png" alt="red, blue & purple mix"><br>
-    <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
-  </h3>
-</div>
-
-<div class="colour-page" id="page-blue">
-  <h1><span class="colour-txt" id="blue-txt">Blue</span></h1>
-  <h3>is a Primary Colour.<br><br>
-    This means <span class="colour-txt" id="blue-txt">blue</span> can't be made<br>by mixing other colours together.<br><br>
-    <h1>🐋</h1>
-  </h3>
-  <div class="main">
-  <div class="wheel-return-container">
-    <span class="fade-in"><button onclick="wheelReturn()" class="wheel-return-btn">Back to<br>Colour Wheel</button></span>
-</div>
-</div>
-
-
-
-    </body>
-
+</body>
 </html>
