@@ -223,13 +223,13 @@ h4 {
 /* mix and learn option buttons container */
 #learn-mix-buttons {
   display: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: relative;
   align-self: center;
   align-items: center;
   text-align: center;
-  margin-top: 20px;
-  width: 300px;
+  margin-top: 25px;
+  width: 375px;
   animation: 2s ease 2s normal forwards 1 fadein;
   -webkit-animation: 2s ease 2s normal forwards 1 fadein;
   opacity: 0;
@@ -247,11 +247,11 @@ h4 {
   justify-content: center;
   background-color: #ffc929;
   border-radius: 20px;
-  height: 55px;
-  width: 125px;
+  height: 50px;
+  width: 155px;
   text-align: center;
   color: rgb(88, 87, 87);
-  font-size: 23px;
+  font-size: 20px;
   box-shadow: 5px 5px 10px 1px #d7d6d6;
   text-decoration: none;
 }
@@ -262,11 +262,11 @@ h4 {
 
 /* landing page */
 #learn-body {
-  background-color:  rgb(237, 213, 213);
+  background-color:  rgb(232, 166, 204);
 }
 
 #learn-page {
-  background-color:   rgb(235, 226, 226);
+  background-color:  white;
 }
 
 /* ======== left container ========= */
@@ -351,7 +351,7 @@ h4 {
   position: fixed;
   flex-shrink: 1;
   width: 155px; height: 155px;
-  box-shadow: 5px 5px 10px 1px #d7d6d6;
+  box-shadow: 5px 5px 10px 1px #8154675f;
   border-radius: 50%;
 }
 
@@ -567,12 +567,12 @@ h4 {
 /* //////////////////////////////////////////////////////////// */
 /* about page content */
 .body-about {
-  background-color: white;
+  background-color: #9ad2ab;
 }
 
-.about-colour {
-  font-size: 30px;
-  padding: 20px;
+#about-colour {
+  font-size:25px;
+  padding: 30px;
 }
 
 /* testing
